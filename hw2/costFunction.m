@@ -20,9 +20,12 @@ grad = zeros(size(theta));
 % Note: grad should have the same dimensions as theta
 %
 
+yhat = sigmoid(X * theta)
+costs = (-y .* log(yhat)) - ((ones(m,1) .- y) .* log(ones(m,1) .- yhat))
 
+J = sum(costs) / m
 
-
+grad = (X' * (yhat - y) ) ./ m
 
 
 
