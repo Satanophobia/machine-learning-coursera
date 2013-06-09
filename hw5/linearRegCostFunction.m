@@ -27,7 +27,7 @@ regs(1) = 0;
 
 J = (sse + lambda * sum(regs .^ 2)) / (2 * m);
 
-diffs = yhat    * ones(1,k) - y * ones(1,k);
+diffs = yhat * ones(1,k) - y * ones(1,k);
 grad = (sum(X .* diffs)' + regs .* lambda) / m;
 
 
