@@ -16,8 +16,8 @@ sim = 0;
 %
 %
 
-dist = x1 - x2
-sim = exp( -1 * sum(dist .^ 2) / (2 * sigma ^ 2) )
+dist = x1 - x2;
+sim = exp( -1 * sum(dist .^ 2) / (2 * sigma ^ 2) );
 
 
 
